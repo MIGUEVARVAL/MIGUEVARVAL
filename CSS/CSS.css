@@ -61,6 +61,7 @@ h2{
 .btnIniSesion{
     background-color: #fd8f46d2 !important;
     border-color: #ca743ae3 !important;
+    margin: 10px auto;
 }
 .comentarios{
     background-color: #ffc095d2 ;
@@ -88,6 +89,7 @@ h2{
 }
 .badge{
     padding: 10px;
+    margin: 15px auto;
 }
 .containerProducto img{
     max-height: 250px;
