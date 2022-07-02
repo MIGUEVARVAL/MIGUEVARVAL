@@ -1,0 +1,98 @@
+/* ETIQUETAS */
+
+body{
+    background-color: #faf8ef;
+}
+nav{
+    margin-bottom: 25px;
+}
+h2{
+    margin-top: 10px;
+}
+
+
+
+/* CLASES */
+
+.row{
+    padding-bottom: 20px; 
+    border-bottom: 3px solid #f8914dd2;
+    margin-bottom: 30px;
+}
+.col{
+    margin-top: 20px;
+}
+.card{
+    border-radius: 20px;
+}
+.card img{
+    border-radius: 10px;
+}
+.imagen{
+    border-radius: 20px;
+    border: 5px solid rgba(194, 102, 41, 0.824)
+}
+.imgProductos{
+    max-height: 80%;
+    object-fit: cover;
+}
+.containerProducto{
+    border: 2px solid #ffc198d2 ;
+    opacity: 92%;
+}
+.containerProducto img{
+    max-height: 400px;
+}
+.containerProducto:hover{
+    opacity: 100%;
+    width: 105%;
+}
+.containerProducto p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn-warning{
+    background-color: #ffa66bd2 ;
+    border-color: #fca368d2 ;
+}
+.btnIniSesion{
+    background-color: #fd8f46d2 !important;
+    border-color: #ca743ae3 !important;
+}
+.comentarios{
+    background-color: #ffc095d2 ;
+}
+.contComentario{
+    background-color: #ffecdf;
+    border: #bb8967b6 solid 2px;
+    
+}
+.contenedor{
+    background-color: #fddec8;
+    padding: 8px;
+    border: #c77d4cb6 solid 3px;
+    border-radius: 10px;
+}
+.subContenedor{
+    background-color: #fdf6f1;
+    padding: auto 55px;
+    padding-left: 25px;
+    border: #e2ad896b solid 3px;
+    border-radius: 10px;
+}
+.infoProducto div{
+    border-bottom: #e2ad896b solid 3px;
+}
+.badge{
+    padding: 10px;
+}
+.containerProducto img{
+    max-height: 250px;
+    object-fit: cover;
+}
+
+
+/* IDENTIFICADORES */
