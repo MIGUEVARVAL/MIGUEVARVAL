@@ -57,6 +57,14 @@ h2{
 .btn-warning{
     background-color: #ffa66bd2 ;
     border-color: #fca368d2 ;
+    --bs-btn-disabled-border-color: #fca368d2 !important;
+    --bs-btn-active-bg: #fca368d2 !important;
+    --bs-btn-active-border-color: #fca368d2 !important;
+}
+.btn-warning:hover{
+    background-color: #ffa66bd2 ;
+    border-color: #fca368d2 ;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.247);
 }
 .btnIniSesion{
     background-color: #fd8f46d2 !important;
@@ -94,6 +102,15 @@ h2{
 .containerProducto img{
     max-height: 250px;
     object-fit: cover;
+}
+li .page-item {
+    background-color: #ffffff !important;
+    border-color: #fad9c2d2 ;
+}
+.btn-warning:focus{
+    background-color: #ffa66bd2 ;
+    border: none;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.247);
 }
 
 

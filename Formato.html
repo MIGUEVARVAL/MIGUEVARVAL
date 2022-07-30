@@ -13,47 +13,38 @@
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg bg-light sticky-top" style="background: #f8914de8 !important;">
         <div class="container-fluid ">
-          <a class="navbar-brand" href="#"><img src="img/Cafe.png" style="width: 80px; transform: rotate(20deg);" alt="Cafe logo">Amando el Café</a>
+          <a class="navbar-brand" href="index.html"><img src="img/Cafe.png" style="width: 80px; transform: rotate(20deg);" alt="Cafe logo">Amando el Café</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="background-image: var(--bs-navbar-toggler-icon-bg) !important;"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Productos</a>
+                <a class="nav-link" href="Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Empresas.html">Empresas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AcercaDe.html">Acerca de</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mr-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ayuda</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="btn btn-warning btnIniSesion">Iniciar Sesión</a>
+                <a href="#" class="btn btn-warning btnIniSesion" data-bs-toggle="modal" data-bs-target="#modalInicioSesion">Iniciar Sesión</a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="btn btn-warning btnIniSesion ml-2">Registrarse</a>
+              <li class="nav-item ml-2">
+                <a href="#" class="btn btn-warning btnIniSesion" data-bs-toggle="modal" data-bs-target="#modalRegistro">Registrarse</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
     <div class="container">
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur voluptates illo minima laboriosam hic minus, ab fuga rerum deleniti quam sunt, maiores molestias qui sequi unde nostrum sapiente dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro consequatur, repellat placeat praesentium illo voluptatibus magni maiores officiis dolorem fugiat, eos excepturi perspiciatis libero dolore, culpa vel voluptate ducimus?loer
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ad fugiat ab, nemo reiciendis harum architecto nesciunt error, officia perferendis saepe. Est illum quis esse dolor cum, minima molestiae eveniet.
-      </p>
-
-      HOLAAAAAAA
-      Cómo estás
-    <div class="row">
-      <div class="col">
-        <h1>col1</h1>
-      </div>
-      <div class="col">
-        <h1>col2</h1>
-      </div>
-    </div>
 
     </div>
 
@@ -81,7 +72,43 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ...
+            Si necesitas ayuda para el manejo de la aplicación, fácilmente te lo explicaremos, 
+            <br><br>
+            <strong>Lo primero es saber cómo vemos los productos</strong>
+            <ul>
+              <ol>
+                1. Nos vamos a la sección de productos desde el navegador en la parte superior de la página
+                <img class="img-fluid p-4" src="img/Ayuda/imgNavbar.PNG">
+              </ol>
+              <ol>
+                2. Escogemos el producto de nuestra preeferencia a partir de las características que buscamos, 
+                aquí puedes ver la img del producto (1), el nombre (2), la descripción (3), quién lo hizo (4) y la calificación (5), 
+                después de encontrar el que queremos seleccionamos el botón "Saber más"
+                <img class="img-fluid p-4" src="img/Ayuda/Producto.PNG">
+              </ol>
+              <ol>
+                3. Posterior a seleccionar el botón "Saber más" entrarás a la información completa del producto seleccionado, 
+                tanto la información del creador del producto como del producto en sí
+              </ol>
+            </ul>
+            <br><br>
+            <strong>Lo segundo es saber cómo vemos las empresasa</strong>
+            <ul>
+              <ol>
+                1. Nos vamos a la sección de productos desde el navegador en la parte superior de la página
+                <img class="img-fluid p-4" src="img/Ayuda/imgNavbar.PNG">
+              </ol>
+              <ol>
+                2. Escogemos el producto de nuestra preeferencia a partir de las características que buscamos, 
+                aquí puedes ver la img del producto (1), el nombre (2), la descripción (3), quién lo hizo (4) y la calificación (5), 
+                después de encontrar el que queremos seleccionamos el botón "Saber más"
+                <img class="img-fluid p-4" src="img/Ayuda/Producto.PNG">
+              </ol>
+              <ol>
+                3. Posterior a seleccionar el botón "Saber más" entrarás a la información completa del producto seleccionado, 
+                tanto la información del creador del producto como del producto en sí
+              </ol>
+            </ul>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -109,6 +136,64 @@
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-warning mt-4 " style="background-color: #ffbe92 !important;">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Ristro-->
+    <div class="modal fade " id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3" style="border: none;">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="correo@ejemplo.com">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contarseña</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-md-8">
+                <label for="inputAddress" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="inputAddress">
+              </div>
+              <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="inputAddress">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Dirrección</label>
+                <input type="text" class="form-control" id="inputAddress2">
+              </div>
+              <div class="col-md-6">
+                <label for="inputState" class="form-label">Departamento</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Antioquia</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputAddress2">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Acepto términos y condiciones
+                  </label>
+                </div>
               </div>
               <div class="d-grid gap-2 col-6 mx-auto">
                 <button type="submit" class="btn btn-warning mt-4 " style="background-color: #ffbe92 !important;">Enviar</button>
