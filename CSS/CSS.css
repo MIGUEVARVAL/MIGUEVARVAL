@@ -112,6 +112,10 @@ li .page-item {
     border: none;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.247);
 }
-
+.cardPerfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* IDENTIFICADORES */
