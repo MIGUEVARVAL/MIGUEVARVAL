@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="img/Logo2.png" href="img/Logo2.png"/>
+    <title>Amando el caf&eacute;</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/CSS.css" >
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top" style="background: #f8914de8 !important;">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html"><img src="img/Cafe.png" style="width: 80px; transform: rotate(20deg);" alt="Cafe logo">Amando el Café</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-image: var(--bs-navbar-toggler-icon-bg) !important;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Empresas.html">Empresas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AcercaDe.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mr-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ayuda</a>
+              </li>
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Miguel Vargas
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Mis productos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="row p-0">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="img/Logo2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalFrase"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                </svg></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+            <form class="row g-3" style="border: none;">
+              <div class="col-12">
+                <label for="inputEmail4" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="correo@ejemplo.com" disabled > 
+              </div>
+              <div class="col-md-8">
+                <label for="inputAddress" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Miguel Angel Vargas Valencia" disabled>
+              </div>
+              <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Celular</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="3008888888" disabled>
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Cl 80" disabled>
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Fecha de Nacimiento</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="01/01/2000" disabled>
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">País de Residencia</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Colombia" disabled>
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-warning " style="background-color: #ffbe92 !important;">Editar</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="navbar bg-light" style="margin-bottom: 0px; background: #f8914de8 !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/Logo2.png" alt=""  height="40" class="d-inline-block align-text-top">
+            Miguel Angel Vargas Valencia
+        </a>
+        <div class="navbar-nav ms-auto">
+            Libera todo tu potencial y vuelvete grande
+            <br>
+            mvarvalenc26@gmail.com
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Ayuda-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ayuda</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Si necesitas ayuda para el manejo de la aplicación, fácilmente te lo explicaremos, 
+            <br><br>
+            <strong>Lo primero es saber cómo vemos los productos</strong>
+            <ul>
+              <ol>
+                1. Nos vamos a la sección de productos desde el navegador en la parte superior de la página
+                <img class="img-fluid p-4" src="img/Ayuda/imgNavbar.PNG">
+              </ol>
+              <ol>
+                2. Escogemos el producto de nuestra preeferencia a partir de las características que buscamos, 
+                aquí puedes ver la img del producto (1), el nombre (2), la descripción (3), quién lo hizo (4) y la calificación (5), 
+                después de encontrar el que queremos seleccionamos el botón "Saber más"
+                <img class="img-fluid p-4" src="img/Ayuda/Producto.PNG">
+              </ol>
+              <ol>
+                3. Posterior a seleccionar el botón "Saber más" entrarás a la información completa del producto seleccionado, 
+                tanto la información del creador del producto como del producto en sí
+              </ol>
+            </ul>
+            <br><br>
+            <strong>Lo segundo es saber cómo vemos las empresasa</strong>
+            <ul>
+              <ol>
+                1. Nos vamos a la sección de productos desde el navegador en la parte superior de la página
+                <img class="img-fluid p-4" src="img/Ayuda/imgNavbar.PNG">
+              </ol>
+              <ol>
+                2. Escogemos el producto de nuestra preeferencia a partir de las características que buscamos, 
+                aquí puedes ver la img del producto (1), el nombre (2), la descripción (3), quién lo hizo (4) y la calificación (5), 
+                después de encontrar el que queremos seleccionamos el botón "Saber más"
+                <img class="img-fluid p-4" src="img/Ayuda/Producto.PNG">
+              </ol>
+              <ol>
+                3. Posterior a seleccionar el botón "Saber más" entrarás a la información completa del producto seleccionado, 
+                tanto la información del creador del producto como del producto en sí
+              </ol>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-warning " style="background-color: #ffbe92 !important;">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal Frase-->
+<div class="modal fade " id="modalFrase" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-3">
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Ingresa tu nueva frase</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-warning " style="background-color: #ffbe92 !important;">Cambiar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Modal Inicias Sesion-->
+    <div class="modal fade " id="modalInicioSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3 ">
+                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Ingresa el correo electrónico con el que te registraste</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-warning mt-4 " style="background-color: #ffbe92 !important;">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modal Ristro-->
+    <div class="modal fade " id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3" style="border: none;">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="correo@ejemplo.com">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contarseña</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-md-8">
+                <label for="inputAddress" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="inputAddress">
+              </div>
+              <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="inputAddress">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Dirrección</label>
+                <input type="text" class="form-control" id="inputAddress2">
+              </div>
+              <div class="col-md-6">
+                <label for="inputState" class="form-label">Departamento</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Antioquia</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputAddress2">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Acepto términos y condiciones
+                  </label>
+                </div>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-warning mt-4 " style="background-color: #ffbe92 !important;">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
