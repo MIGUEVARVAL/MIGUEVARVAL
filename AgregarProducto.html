@@ -12,67 +12,64 @@
   <body>
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg bg-light sticky-top" style="background: #f8914de8 !important;">
-      <div class="container-fluid ">
-        <a class="navbar-brand" href="index.html"><img src="img/Cafe.png" style="width: 80px; transform: rotate(20deg);" alt="Cafe logo">Amando el Café</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="background-image: var(--bs-navbar-toggler-icon-bg) !important;"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link "  href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Empresas.html">Empresas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="AcercaDe.html">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mr-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ayuda</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="btn btn-princ btnIniSesion" data-bs-toggle="modal" data-bs-target="#modalInicioSesion">Iniciar Sesión</a>
-            </li>
-            <li class="nav-item ml-2">
-              <a href="#" class="btn btn-princ btnIniSesion" data-bs-toggle="modal" data-bs-target="#modalRegistro">Registrarse</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </nav>
-    <div class="container"> 
-      <div class="row containerProducto pt-4 rounded-4 shadow p-3 mb-3 bg-body ">
-          <div class="col-12 col-md-4 col-lg-4">
-              <img src="img/Cafetal.jpg" class="imagen img-fluid mx-auto d-block" alt="Cafetal">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html"><img src="img/Cafe.png" style="width: 80px; transform: rotate(20deg);" alt="Cafe logo">Amando el Café</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-image: var(--bs-navbar-toggler-icon-bg) !important;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Empresas.html">Empresas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AcercaDe.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mr-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn btn-princ btnIniSesion" data-bs-toggle="modal" data-bs-target="#modalInicioSesion">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item ml-2">
+                <a href="#" class="btn btn-princ btnIniSesion" data-bs-toggle="modal" data-bs-target="#modalRegistro">Registrarse</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-12 col-md-8 col-lg-8">
-              <h2>Cafetal SAS</h2>
-              <p class="mt-3 text-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta perspiciatis delectus enim voluptatem rem quia, quo vitae nostrum a doloremque, cum dolor consequatur molestiae quis aliquid ut ab placeat?
-              </p>
-              <span class="badge text-bg-secondary">Productos: 26</span>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="EmpresaEspecifica.html" class="btn btn-princ">Saber más</a>
-              </div>
-          </div>
-      </div>
-      <div class="row containerProducto pt-4 rounded-4 shadow p-3 mb-3 bg-body ">
-        <div class="col-12 col-md-4 col-lg-4">
-            <img src="img/FedeCafet.png" class="imagen img-fluid mx-auto d-block" alt="Cafetal">
         </div>
-        <div class="col-12 col-md-8 col-lg-8">
-            <h2>Federacion Cafetera</h2>
-            <p class="mt-3 text-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta perspiciatis delectus enim voluptatem rem quia, quo vitae nostrum a doloremque, cum dolor consequatur molestiae quis aliquid ut ab placeat?
-            </p>
-            <span class="badge text-bg-secondary">Productos: 412</span>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <a href="EmpresaEspecifica.html" class="btn btn-princ">Saber más</a>
-            </div>
+    </nav>
+    <div class="container">
+        <div class="row containerProducto pt-4 rounded-4 p-3 mb-3 bg-body mt-4" style="width: 105%;">
+            <h2 class="text-center mb-4">Agregar Producto</h2>
+            <form class="row g-3" style="border: none;">
+                <div class="col-12">
+                  <label for="inputEmail4" class="form-label">Título del producto</label>
+                  <input type="text" class="form-control" id="inputEmail4"> 
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Descripción</label>
+                  <textarea class="form-control" rows="8" id="inputAddress" 
+                  placeholder="Información detallada del producto en donde puede contar su proceso, orígenes, beneficios y todo lo relevante del producto"></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Precio del Producto</label>
+                  <input type="number" class="form-control" id="inputAddress">
+                </div>
+                <div class="mb-3 col-12">
+                    <label for="formFile" class="form-label">Imagen del Producto</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="submit" class="btn btn-princ " style="background-color: #ffbe92 !important;">Editar</button>
+                </div>
+            </form>
         </div>
-      </div>
     </div>
 
     <!-- Footer -->
@@ -108,10 +105,32 @@
                 <img class="img-fluid p-4" src="img/Ayuda/imgNavbar.PNG">
               </ol>
               <ol>
-                2. Escogemos eel producto de nuestra preeferencia a partir de las características que buscamos, 
+                2. Escogemos el producto de nuestra preeferencia a partir de las características que buscamos, 
                 aquí puedes ver la img del producto (1), el nombre (2), la descripción (3), quién lo hizo (4) y la calificación (5), 
                 después de encontrar el que queremos seleccionamos el botón "Saber más"
                 <img class="img-fluid p-4" src="img/Ayuda/Producto.PNG">
+              </ol>
+              <ol>
+                3. Posterior a seleccionar el botón "Saber más" entrarás a la información completa del producto seleccionado, 
+                tanto la información del creador del producto como del producto en sí
+              </ol>
+            </ul>
+            <br><br>
+            <strong>Lo segundo es saber cómo vemos las empresasa</strong>
+            <ul>
+              <ol>
+                1. Nos vamos a la sección de productos desde el navegador en la parte superior de la página
+                <img class="img-fluid p-4" src="img/Ayuda/imgNavbar.PNG">
+              </ol>
+              <ol>
+                2. Escogemos el producto de nuestra preeferencia a partir de las características que buscamos, 
+                aquí puedes ver la img del producto (1), el nombre (2), la descripción (3), quién lo hizo (4) y la calificación (5), 
+                después de encontrar el que queremos seleccionamos el botón "Saber más"
+                <img class="img-fluid p-4" src="img/Ayuda/Producto.PNG">
+              </ol>
+              <ol>
+                3. Posterior a seleccionar el botón "Saber más" entrarás a la información completa del producto seleccionado, 
+                tanto la información del creador del producto como del producto en sí
               </ol>
             </ul>
           </div>
@@ -150,7 +169,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Modal Registro-->
     <div class="modal fade " id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">

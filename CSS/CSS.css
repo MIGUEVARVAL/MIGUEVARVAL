@@ -11,7 +11,6 @@ h2{
 }
 
 
-
 /* CLASES */
 
 .row{
@@ -54,14 +53,14 @@ h2{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.btn-warning{
+.btn-princ{
     background-color: #ffa66bd2 ;
     border-color: #fca368d2 ;
     --bs-btn-disabled-border-color: #fca368d2 !important;
     --bs-btn-active-bg: #fca368d2 !important;
     --bs-btn-active-border-color: #fca368d2 !important;
 }
-.btn-warning:hover{
+.btn-princ:hover{
     background-color: #ffa66bd2 ;
     border-color: #fca368d2 ;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.247);
@@ -107,7 +106,7 @@ li .page-item {
     background-color: #ffffff !important;
     border-color: #fad9c2d2 ;
 }
-.btn-warning:focus{
+.btn-princ:focus{
     background-color: #ffa66bd2 ;
     border: none;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.247);
@@ -146,4 +145,14 @@ li .page-item {
     z-index: 999999;
     padding: 0;
 }
+a svg{
+    text-decoration: none;
+    color: black;
+}
+a svg .editProducto, .elimProducto{
+    position: absolute;
+}
+
+
+
 /* IDENTIFICADORES */
