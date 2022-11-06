@@ -74,14 +74,14 @@ h2{
     background-color: #ffc095d2 ;
 }
 .contComentario{
-    background-color: #ffecdf;
-    border: #bb8967b6 solid 2px;
+    background-color: #fffaf7e1;
+    border: #bb89672a solid 2px;
     
 }
 .contenedor{
-    background-color: #fddec8;
+    background-color: #fddec875;
     padding: 8px;
-    border: #c77d4cb6 solid 3px;
+    border: #cf9269b6 solid 3px;
     border-radius: 10px;
 }
 .subContenedor{
