@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="img/Logo2.png" href="img/Logo2.png"/>
+    <title>Slashnotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/CSS.css" >
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top" style="background: #f8914de8 !important;">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html"><img src="img/Logo2.png" style="width: 50px;" alt="logo">Slashnotes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-image: var(--bs-navbar-toggler-icon-bg) !important;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Productos.html">Materias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Foro.html">Foro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Empresas.html">Tutorías</a>
+            </li>
+            <div class="btn-group">
+              <button type="button" class="btn btn-princ dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  Miguel Vargas
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+                <li><a class="dropdown-item" href="#">Mis apuntes</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+  </nav>
+    <div class="container">
+      <div class="row p-0 justify-content-md-center">
+        <div class="col-lg-4 cardPerfil">
+          <div class="card" style="width: 18rem;">
+            <img src="img/Logo2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center">"Entender el fin"
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalFrase"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                </svg></a></p>
+              <p class="card-text text-center">
+                <small class="text-muted">Puntos: <strong>450</strong></small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+            <form class="row g-3" style="border: none;">
+              <div class="col-12">
+                <label for="inputEmail4" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="correo@ejemplo.com" disabled > 
+              </div>
+              <div class="col-md-8">
+                <label for="inputAddress" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Miguel Angel Vargas Valencia" disabled>
+              </div>
+              <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Celular</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="3008888888" disabled>
+              </div>
+              <div class="col-md-10">
+                <label for="inputAddress2" class="form-label">Programa Curricular</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Ingeniería Civil" disabled>
+              </div>
+              <div class="col-md-2">
+                <label for="inputAddress2" class="form-label">Avance</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="50%" disabled>
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-princ " style="background-color: #ffbe92 !important;">Editar</button>
+              </div>
+            </form>
+        </div>
+      </div>
+      <div class="row containerProducto pt-4 rounded-4 p-3 mb-3 bg-body mt-4" style="width: 105%;">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-circle-fill agregarProducto" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+        </svg></a>
+        <h1 class="text-center mb-4">Tus Apuntes</h1>
+        <div class="col-12 col-md-6 col-lg-6 mb-3">
+          <div class="card">
+            <iframe src="img/Semana 3.pdf"  style="border-radius: 5px; height: 200px;" frameborder="0"></iframe>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-trash elimProducto" viewBox="0 0 16 16">
+              <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+              <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-pencil-fill editProducto" viewBox="0 0 16 16">
+              <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+            </svg>
+            <div class="card-body">
+              <p class="text-break">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa enim, possimus minus qui laborum voluptatem voluptates dolorum eius facilis quo fuga! Nulla numquam, consequatur voluptates facere sit exercitationem rerum asperiores.</h5>
+              </p>
+              <p class="card-text text-center">
+                <small class="text-muted">Materia: <strong>Calculo Diferencial</strong></small>
+              </p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <a href="ProductoEspecifico.html" class="btn btn-princ">Saber más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 mb-3">
+          <div class="card">
+            <iframe src="img/Taller7-6.pdf"  style="border-radius: 5px; height: 200px;" frameborder="0"></iframe>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-trash elimProducto" viewBox="0 0 16 16">
+              <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+              <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-pencil-fill editProducto" viewBox="0 0 16 16">
+              <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+            </svg>
+            <div class="card-body">
+              <p class="text-break">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa enim, possimus minus qui laborum voluptatem voluptates dolorum eius facilis quo fuga! Nulla numquam, consequatur voluptates facere sit exercitationem rerum asperiores.</h5>
+              </p>
+              <p class="card-text text-center">
+                <small class="text-muted">Materia: <strong>Calculo Diferencial</strong></small>
+              </p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <a href="ProductoEspecifico.html" class="btn btn-princ">Saber más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="navbar bg-light" style="margin-bottom: 0px; background: #f8914de8 !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          Tus apuntes académicos de confianza
+        </a>
+        <div class="navbar-nav ms-auto">
+            Libera todo tu potencial y vuelvete grande
+            <br>
+            apuntesun@gmail.com
+        </div>
+      </div>
+    </footer>
+
+  
+
+<!-- Modal Frase-->
+<div class="modal fade " id="modalFrase" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-3">
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Ingresa tu nueva frase</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-princ " style="background-color: #ffbe92 !important;">Cambiar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
